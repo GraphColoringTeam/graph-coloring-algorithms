@@ -1,0 +1,6 @@
+add_subdirectory(backtracking)
+add_subdirectory(greedy)
+add_subdirectory(simulated_annealing)
+add_subdirectory(constraint_programming)
+add_subdirectory(max_cut_approx)
+add_subdirectory(perfect_graphs)

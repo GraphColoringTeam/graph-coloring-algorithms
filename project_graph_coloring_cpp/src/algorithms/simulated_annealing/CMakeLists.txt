@@ -1,0 +1,3 @@
+add_library(simulated_annealing SimulatedAnnealing.cpp)
+target_include_directories(simulated_annealing PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+target_link_libraries(simulated_annealing graph)
