@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/MINH THU/source/repos/graph-coloring-algorithms/project_graph_coloring_cpp/build/cmake_install.cmake",
+		"C:/Users/MINH THU/source/repos/graph-coloring-algorithms/project_graph_coloring_cpp/build/src/graph_representation/cmake_install.cmake",
+		"C:/Users/MINH THU/source/repos/graph-coloring-algorithms/project_graph_coloring_cpp/build/src/utils/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

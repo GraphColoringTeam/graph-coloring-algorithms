@@ -1,0 +1,9 @@
+C:/Users/MINH THU/source/repos/graph-coloring-algorithms/project_graph_coloring_cpp/build/CMakeFiles/main.dir
+C:/Users/MINH THU/source/repos/graph-coloring-algorithms/project_graph_coloring_cpp/build/CMakeFiles/edit_cache.dir
+C:/Users/MINH THU/source/repos/graph-coloring-algorithms/project_graph_coloring_cpp/build/CMakeFiles/rebuild_cache.dir
+C:/Users/MINH THU/source/repos/graph-coloring-algorithms/project_graph_coloring_cpp/build/src/graph_representation/CMakeFiles/graph.dir
+C:/Users/MINH THU/source/repos/graph-coloring-algorithms/project_graph_coloring_cpp/build/src/graph_representation/CMakeFiles/edit_cache.dir
+C:/Users/MINH THU/source/repos/graph-coloring-algorithms/project_graph_coloring_cpp/build/src/graph_representation/CMakeFiles/rebuild_cache.dir
+C:/Users/MINH THU/source/repos/graph-coloring-algorithms/project_graph_coloring_cpp/build/src/utils/CMakeFiles/utils.dir
+C:/Users/MINH THU/source/repos/graph-coloring-algorithms/project_graph_coloring_cpp/build/src/utils/CMakeFiles/edit_cache.dir
+C:/Users/MINH THU/source/repos/graph-coloring-algorithms/project_graph_coloring_cpp/build/src/utils/CMakeFiles/rebuild_cache.dir
