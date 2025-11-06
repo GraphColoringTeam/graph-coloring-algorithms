@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "name": "MinGW",
+            "includePath": [
+                "${workspaceFolder}/**",
+                // Đường dẫn tới thư mục gốc chứa các header (.h)
+                "${workspaceFolder}/src",
+                "${workspaceFolder}/src/graph_representation",
+                "${workspaceFolder}/src/utils",
+                // Thêm thư mục backtracking để chuẩn bị cho Giai đoạn 2
+                "${workspaceFolder}/src/algorithms/backtracking"
+            ],
+            "defines": [],
+            "compilerPath": "C:/msys64/ucrt64/bin/g++.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-x64"
+        }
+    ],
+    "version": 4
+}
