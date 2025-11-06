@@ -4,37 +4,35 @@
 #include <fstream>
 #include <sstream>
 #include <stdexcept>
-
-std::unique_ptr<Graph> loadGraphFromFile(const std::string& filename) {
-    std::ifstream file(filename);
+using namespace std;
+unique_ptr<Graph> loadGraphFromFile(const string& filename) {
+    ifstream file(filename);
     if (!file.is_open()) {
-        std::cerr << "Loi: Khong the mo file " << filename << ". Kiem tra duong dan file." << std::endl;
-        return nullptr;
-    }
+        cerr << "Loi: Khong the mo file " << filename << ". Kiem tra duong dan file." << endl;
+return unique_ptr<Graph>(nullptr);    }
 
     int V = 0, E = 0; 
-    std::string line;
+   string line;
 
-    if (std::getline(file, line)) {
-        std::stringstream ss(line);
+    if (getline(file, line)) {
+        stringstream ss(line);
         if (!(ss >> V >> E)) V = 0; 
     }
 
     if (V <= 0) {
-        std::cerr << "Loi: So luong dinh khong hop le hoac khong doc duoc." << std::endl;
-        return nullptr;
-    }
+        cerr << "Loi: So luong dinh khong hop le hoac khong doc duoc." << endl;
+return unique_ptr<Graph>(nullptr);    }
 
-    auto g = std::make_unique<Graph>(V);
+    auto g =make_unique<Graph>(V);
 
     int u, v;
-    while (std::getline(file, line)) {
-        std::stringstream ss(line);
+    while (getline(file, line)) {
+        stringstream ss(line);
         if (ss >> u >> v) {
             try {
                 g->addEdge(u, v);
-            } catch (const std::out_of_range& e) {
-                std::cerr << "Canh (" << u << ", " << v << ") bi bo qua: " << e.what() << std::endl;
+            } catch (const out_of_range& e) {
+                cerr << "Canh (" << u << ", " << v << ") bi bo qua: " << e.what() << endl;
             }
         }
     }
