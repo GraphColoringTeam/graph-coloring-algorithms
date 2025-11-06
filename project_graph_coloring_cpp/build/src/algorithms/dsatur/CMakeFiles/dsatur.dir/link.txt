@@ -1,0 +1,2 @@
+/usr/bin/ar qc libdsatur.a CMakeFiles/dsatur.dir/DSATUR.cpp.o
+/usr/bin/ranlib libdsatur.a
