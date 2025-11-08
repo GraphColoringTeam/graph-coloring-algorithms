@@ -9,7 +9,7 @@ bool BacktrackingSolver::isSafe(int v, const Graph& graph, const std::vector<int
 }
 
 bool BacktrackingSolver::graphColoringUtil(const Graph& graph, int m, std::vector<int>& colors, int v) {
-    if (v == graph.numVertices()) return true;
+    if (v == graph.numVertices()) return true; // tất cả đỉnh đã tô
 
     for (int c = 1; c <= m; ++c) {
         if (isSafe(v, graph, colors, c)) {
@@ -18,15 +18,12 @@ bool BacktrackingSolver::graphColoringUtil(const Graph& graph, int m, std::vecto
                 return true;
             colors[v] = 0; // backtrack
         }
-}
+    }
     return false;
 }
 
 std::vector<int> BacktrackingSolver::solve(const Graph& graph, int maxColors) {
     std::vector<int> colors(graph.numVertices(), 0);
-    if (!graphColoringUtil(graph, maxColors, colors, 0)) {
-        std::cout << "Không thể tô được với " << maxColors << " màu.\n";
-    }
+    graphColoringUtil(graph, maxColors, colors, 0);
     return colors;
 }
-
