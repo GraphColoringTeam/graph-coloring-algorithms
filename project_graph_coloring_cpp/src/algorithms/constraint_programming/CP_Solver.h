@@ -1,8 +1,8 @@
 #pragma once
+#include "../include/Graph.h"
 #include <vector>
-#include "../../graph_representation/Graph.h"
 
 class CPSolver {
 public:
-    static std::vector<int> solve(const Graph& graph, int maxColors);
+    static std::vector<int> solve(const Graph& g, int maxColors);
 };
