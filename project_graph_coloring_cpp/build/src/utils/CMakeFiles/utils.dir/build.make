@@ -69,31 +69,79 @@ include src/utils/CMakeFiles/utils.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/utils/CMakeFiles/utils.dir/flags.make
 
-src/utils/CMakeFiles/utils.dir/utils.cpp.o: src/utils/CMakeFiles/utils.dir/flags.make
-src/utils/CMakeFiles/utils.dir/utils.cpp.o: /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/src/utils/utils.cpp
-src/utils/CMakeFiles/utils.dir/utils.cpp.o: src/utils/CMakeFiles/utils.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/utils/CMakeFiles/utils.dir/utils.cpp.o"
-	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/src/utils && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/utils/CMakeFiles/utils.dir/utils.cpp.o -MF CMakeFiles/utils.dir/utils.cpp.o.d -o CMakeFiles/utils.dir/utils.cpp.o -c /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/src/utils/utils.cpp
+src/utils/CMakeFiles/utils.dir/TestDataGenerator.cpp.o: src/utils/CMakeFiles/utils.dir/flags.make
+src/utils/CMakeFiles/utils.dir/TestDataGenerator.cpp.o: /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/src/utils/TestDataGenerator.cpp
+src/utils/CMakeFiles/utils.dir/TestDataGenerator.cpp.o: src/utils/CMakeFiles/utils.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/utils/CMakeFiles/utils.dir/TestDataGenerator.cpp.o"
+	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/src/utils && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/utils/CMakeFiles/utils.dir/TestDataGenerator.cpp.o -MF CMakeFiles/utils.dir/TestDataGenerator.cpp.o.d -o CMakeFiles/utils.dir/TestDataGenerator.cpp.o -c /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/src/utils/TestDataGenerator.cpp
 
-src/utils/CMakeFiles/utils.dir/utils.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/utils.dir/utils.cpp.i"
-	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/src/utils && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/src/utils/utils.cpp > CMakeFiles/utils.dir/utils.cpp.i
+src/utils/CMakeFiles/utils.dir/TestDataGenerator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/utils.dir/TestDataGenerator.cpp.i"
+	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/src/utils && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/src/utils/TestDataGenerator.cpp > CMakeFiles/utils.dir/TestDataGenerator.cpp.i
 
-src/utils/CMakeFiles/utils.dir/utils.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/utils.dir/utils.cpp.s"
-	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/src/utils && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/src/utils/utils.cpp -o CMakeFiles/utils.dir/utils.cpp.s
+src/utils/CMakeFiles/utils.dir/TestDataGenerator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/utils.dir/TestDataGenerator.cpp.s"
+	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/src/utils && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/src/utils/TestDataGenerator.cpp -o CMakeFiles/utils.dir/TestDataGenerator.cpp.s
+
+src/utils/CMakeFiles/utils.dir/TestRunner.cpp.o: src/utils/CMakeFiles/utils.dir/flags.make
+src/utils/CMakeFiles/utils.dir/TestRunner.cpp.o: /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/src/utils/TestRunner.cpp
+src/utils/CMakeFiles/utils.dir/TestRunner.cpp.o: src/utils/CMakeFiles/utils.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/utils/CMakeFiles/utils.dir/TestRunner.cpp.o"
+	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/src/utils && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/utils/CMakeFiles/utils.dir/TestRunner.cpp.o -MF CMakeFiles/utils.dir/TestRunner.cpp.o.d -o CMakeFiles/utils.dir/TestRunner.cpp.o -c /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/src/utils/TestRunner.cpp
+
+src/utils/CMakeFiles/utils.dir/TestRunner.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/utils.dir/TestRunner.cpp.i"
+	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/src/utils && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/src/utils/TestRunner.cpp > CMakeFiles/utils.dir/TestRunner.cpp.i
+
+src/utils/CMakeFiles/utils.dir/TestRunner.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/utils.dir/TestRunner.cpp.s"
+	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/src/utils && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/src/utils/TestRunner.cpp -o CMakeFiles/utils.dir/TestRunner.cpp.s
+
+src/utils/CMakeFiles/utils.dir/Benchmark.cpp.o: src/utils/CMakeFiles/utils.dir/flags.make
+src/utils/CMakeFiles/utils.dir/Benchmark.cpp.o: /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/src/utils/Benchmark.cpp
+src/utils/CMakeFiles/utils.dir/Benchmark.cpp.o: src/utils/CMakeFiles/utils.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/utils/CMakeFiles/utils.dir/Benchmark.cpp.o"
+	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/src/utils && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/utils/CMakeFiles/utils.dir/Benchmark.cpp.o -MF CMakeFiles/utils.dir/Benchmark.cpp.o.d -o CMakeFiles/utils.dir/Benchmark.cpp.o -c /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/src/utils/Benchmark.cpp
+
+src/utils/CMakeFiles/utils.dir/Benchmark.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/utils.dir/Benchmark.cpp.i"
+	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/src/utils && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/src/utils/Benchmark.cpp > CMakeFiles/utils.dir/Benchmark.cpp.i
+
+src/utils/CMakeFiles/utils.dir/Benchmark.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/utils.dir/Benchmark.cpp.s"
+	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/src/utils && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/src/utils/Benchmark.cpp -o CMakeFiles/utils.dir/Benchmark.cpp.s
+
+src/utils/CMakeFiles/utils.dir/ComprehensiveAnalyzer.cpp.o: src/utils/CMakeFiles/utils.dir/flags.make
+src/utils/CMakeFiles/utils.dir/ComprehensiveAnalyzer.cpp.o: /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/src/utils/ComprehensiveAnalyzer.cpp
+src/utils/CMakeFiles/utils.dir/ComprehensiveAnalyzer.cpp.o: src/utils/CMakeFiles/utils.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/utils/CMakeFiles/utils.dir/ComprehensiveAnalyzer.cpp.o"
+	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/src/utils && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/utils/CMakeFiles/utils.dir/ComprehensiveAnalyzer.cpp.o -MF CMakeFiles/utils.dir/ComprehensiveAnalyzer.cpp.o.d -o CMakeFiles/utils.dir/ComprehensiveAnalyzer.cpp.o -c /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/src/utils/ComprehensiveAnalyzer.cpp
+
+src/utils/CMakeFiles/utils.dir/ComprehensiveAnalyzer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/utils.dir/ComprehensiveAnalyzer.cpp.i"
+	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/src/utils && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/src/utils/ComprehensiveAnalyzer.cpp > CMakeFiles/utils.dir/ComprehensiveAnalyzer.cpp.i
+
+src/utils/CMakeFiles/utils.dir/ComprehensiveAnalyzer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/utils.dir/ComprehensiveAnalyzer.cpp.s"
+	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/src/utils && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/src/utils/ComprehensiveAnalyzer.cpp -o CMakeFiles/utils.dir/ComprehensiveAnalyzer.cpp.s
 
 # Object files for target utils
 utils_OBJECTS = \
-"CMakeFiles/utils.dir/utils.cpp.o"
+"CMakeFiles/utils.dir/TestDataGenerator.cpp.o" \
+"CMakeFiles/utils.dir/TestRunner.cpp.o" \
+"CMakeFiles/utils.dir/Benchmark.cpp.o" \
+"CMakeFiles/utils.dir/ComprehensiveAnalyzer.cpp.o"
 
 # External object files for target utils
 utils_EXTERNAL_OBJECTS =
 
-src/utils/libutils.a: src/utils/CMakeFiles/utils.dir/utils.cpp.o
+src/utils/libutils.a: src/utils/CMakeFiles/utils.dir/TestDataGenerator.cpp.o
+src/utils/libutils.a: src/utils/CMakeFiles/utils.dir/TestRunner.cpp.o
+src/utils/libutils.a: src/utils/CMakeFiles/utils.dir/Benchmark.cpp.o
+src/utils/libutils.a: src/utils/CMakeFiles/utils.dir/ComprehensiveAnalyzer.cpp.o
 src/utils/libutils.a: src/utils/CMakeFiles/utils.dir/build.make
 src/utils/libutils.a: src/utils/CMakeFiles/utils.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libutils.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libutils.a"
 	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/src/utils && $(CMAKE_COMMAND) -P CMakeFiles/utils.dir/cmake_clean_target.cmake
 	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/src/utils && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/utils.dir/link.txt --verbose=$(VERBOSE)
 

@@ -116,6 +116,44 @@ depend:
 	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+src/algorithms/constraint_programming/CMakeFiles/cp_solver.dir/rule:
+	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/algorithms/constraint_programming/CMakeFiles/cp_solver.dir/rule
+.PHONY : src/algorithms/constraint_programming/CMakeFiles/cp_solver.dir/rule
+
+# Convenience name for target.
+cp_solver: src/algorithms/constraint_programming/CMakeFiles/cp_solver.dir/rule
+.PHONY : cp_solver
+
+# fast build rule for target.
+cp_solver/fast:
+	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f src/algorithms/constraint_programming/CMakeFiles/cp_solver.dir/build.make src/algorithms/constraint_programming/CMakeFiles/cp_solver.dir/build
+.PHONY : cp_solver/fast
+
+CPSolver.o: CPSolver.cpp.o
+.PHONY : CPSolver.o
+
+# target to build an object file
+CPSolver.cpp.o:
+	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f src/algorithms/constraint_programming/CMakeFiles/cp_solver.dir/build.make src/algorithms/constraint_programming/CMakeFiles/cp_solver.dir/CPSolver.cpp.o
+.PHONY : CPSolver.cpp.o
+
+CPSolver.i: CPSolver.cpp.i
+.PHONY : CPSolver.i
+
+# target to preprocess a source file
+CPSolver.cpp.i:
+	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f src/algorithms/constraint_programming/CMakeFiles/cp_solver.dir/build.make src/algorithms/constraint_programming/CMakeFiles/cp_solver.dir/CPSolver.cpp.i
+.PHONY : CPSolver.cpp.i
+
+CPSolver.s: CPSolver.cpp.s
+.PHONY : CPSolver.s
+
+# target to generate assembly for a file
+CPSolver.cpp.s:
+	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f src/algorithms/constraint_programming/CMakeFiles/cp_solver.dir/build.make src/algorithms/constraint_programming/CMakeFiles/cp_solver.dir/CPSolver.cpp.s
+.PHONY : CPSolver.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -124,6 +162,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... cp_solver"
+	@echo "... CPSolver.o"
+	@echo "... CPSolver.i"
+	@echo "... CPSolver.s"
 .PHONY : help
 
 

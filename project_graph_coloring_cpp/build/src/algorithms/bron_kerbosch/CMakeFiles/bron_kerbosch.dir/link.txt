@@ -1,2 +1,0 @@
-/usr/bin/ar qc libbron_kerbosch.a CMakeFiles/bron_kerbosch.dir/BronKerboschSolver.cpp.o
-/usr/bin/ranlib libbron_kerbosch.a

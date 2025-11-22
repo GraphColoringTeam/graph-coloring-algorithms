@@ -45,8 +45,8 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/src/graph_representation/cmake_install.cmake")
-  include("/home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/src/algorithms/cmake_install.cmake")
   include("/home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/src/utils/cmake_install.cmake")
+  include("/home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/src/algorithms/cmake_install.cmake")
 
 endif()
 

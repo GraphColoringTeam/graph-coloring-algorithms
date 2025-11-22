@@ -143,71 +143,6 @@ graph/fast:
 .PHONY : graph/fast
 
 #=============================================================================
-# Target rules for targets named backtracking
-
-# Build rule for target.
-backtracking: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backtracking
-.PHONY : backtracking
-
-# fast build rule for target.
-backtracking/fast:
-	$(MAKE) $(MAKESILENT) -f src/algorithms/backtracking/CMakeFiles/backtracking.dir/build.make src/algorithms/backtracking/CMakeFiles/backtracking.dir/build
-.PHONY : backtracking/fast
-
-#=============================================================================
-# Target rules for targets named dsatur
-
-# Build rule for target.
-dsatur: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dsatur
-.PHONY : dsatur
-
-# fast build rule for target.
-dsatur/fast:
-	$(MAKE) $(MAKESILENT) -f src/algorithms/dsatur/CMakeFiles/dsatur.dir/build.make src/algorithms/dsatur/CMakeFiles/dsatur.dir/build
-.PHONY : dsatur/fast
-
-#=============================================================================
-# Target rules for targets named rlf
-
-# Build rule for target.
-rlf: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rlf
-.PHONY : rlf
-
-# fast build rule for target.
-rlf/fast:
-	$(MAKE) $(MAKESILENT) -f src/algorithms/rlf/CMakeFiles/rlf.dir/build.make src/algorithms/rlf/CMakeFiles/rlf.dir/build
-.PHONY : rlf/fast
-
-#=============================================================================
-# Target rules for targets named bron_kerbosch
-
-# Build rule for target.
-bron_kerbosch: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bron_kerbosch
-.PHONY : bron_kerbosch
-
-# fast build rule for target.
-bron_kerbosch/fast:
-	$(MAKE) $(MAKESILENT) -f src/algorithms/bron_kerbosch/CMakeFiles/bron_kerbosch.dir/build.make src/algorithms/bron_kerbosch/CMakeFiles/bron_kerbosch.dir/build
-.PHONY : bron_kerbosch/fast
-
-#=============================================================================
-# Target rules for targets named simulated_annealing
-
-# Build rule for target.
-simulated_annealing: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 simulated_annealing
-.PHONY : simulated_annealing
-
-# fast build rule for target.
-simulated_annealing/fast:
-	$(MAKE) $(MAKESILENT) -f src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing.dir/build.make src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing.dir/build
-.PHONY : simulated_annealing/fast
-
-#=============================================================================
 # Target rules for targets named utils
 
 # Build rule for target.
@@ -219,6 +154,71 @@ utils: cmake_check_build_system
 utils/fast:
 	$(MAKE) $(MAKESILENT) -f src/utils/CMakeFiles/utils.dir/build.make src/utils/CMakeFiles/utils.dir/build
 .PHONY : utils/fast
+
+#=============================================================================
+# Target rules for targets named backtracking_solver
+
+# Build rule for target.
+backtracking_solver: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backtracking_solver
+.PHONY : backtracking_solver
+
+# fast build rule for target.
+backtracking_solver/fast:
+	$(MAKE) $(MAKESILENT) -f src/algorithms/backtracking/CMakeFiles/backtracking_solver.dir/build.make src/algorithms/backtracking/CMakeFiles/backtracking_solver.dir/build
+.PHONY : backtracking_solver/fast
+
+#=============================================================================
+# Target rules for targets named dsatur_solver
+
+# Build rule for target.
+dsatur_solver: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dsatur_solver
+.PHONY : dsatur_solver
+
+# fast build rule for target.
+dsatur_solver/fast:
+	$(MAKE) $(MAKESILENT) -f src/algorithms/dsatur/CMakeFiles/dsatur_solver.dir/build.make src/algorithms/dsatur/CMakeFiles/dsatur_solver.dir/build
+.PHONY : dsatur_solver/fast
+
+#=============================================================================
+# Target rules for targets named cp_solver
+
+# Build rule for target.
+cp_solver: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cp_solver
+.PHONY : cp_solver
+
+# fast build rule for target.
+cp_solver/fast:
+	$(MAKE) $(MAKESILENT) -f src/algorithms/constraint_programming/CMakeFiles/cp_solver.dir/build.make src/algorithms/constraint_programming/CMakeFiles/cp_solver.dir/build
+.PHONY : cp_solver/fast
+
+#=============================================================================
+# Target rules for targets named simulated_annealing_solver
+
+# Build rule for target.
+simulated_annealing_solver: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 simulated_annealing_solver
+.PHONY : simulated_annealing_solver
+
+# fast build rule for target.
+simulated_annealing_solver/fast:
+	$(MAKE) $(MAKESILENT) -f src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing_solver.dir/build.make src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing_solver.dir/build
+.PHONY : simulated_annealing_solver/fast
+
+#=============================================================================
+# Target rules for targets named rlf_solver
+
+# Build rule for target.
+rlf_solver: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rlf_solver
+.PHONY : rlf_solver
+
+# fast build rule for target.
+rlf_solver/fast:
+	$(MAKE) $(MAKESILENT) -f src/algorithms/rlf/CMakeFiles/rlf_solver.dir/build.make src/algorithms/rlf/CMakeFiles/rlf_solver.dir/build
+.PHONY : rlf_solver/fast
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -252,13 +252,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... backtracking"
-	@echo "... bron_kerbosch"
-	@echo "... dsatur"
+	@echo "... backtracking_solver"
+	@echo "... cp_solver"
+	@echo "... dsatur_solver"
 	@echo "... graph"
 	@echo "... main"
-	@echo "... rlf"
-	@echo "... simulated_annealing"
+	@echo "... rlf_solver"
+	@echo "... simulated_annealing_solver"
 	@echo "... utils"
 	@echo "... src/main.o"
 	@echo "... src/main.i"

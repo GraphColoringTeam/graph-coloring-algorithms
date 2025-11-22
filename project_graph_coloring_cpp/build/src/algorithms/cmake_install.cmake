@@ -45,11 +45,10 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/src/algorithms/backtracking/cmake_install.cmake")
-  include("/home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/src/algorithms/constraint_programming/cmake_install.cmake")
   include("/home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/src/algorithms/dsatur/cmake_install.cmake")
-  include("/home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/src/algorithms/rlf/cmake_install.cmake")
-  include("/home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/src/algorithms/bron_kerbosch/cmake_install.cmake")
+  include("/home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/src/algorithms/constraint_programming/cmake_install.cmake")
   include("/home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/src/algorithms/simulated_annealing/cmake_install.cmake")
+  include("/home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/src/algorithms/rlf/cmake_install.cmake")
 
 endif()
 

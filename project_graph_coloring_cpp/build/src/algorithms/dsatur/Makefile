@@ -117,42 +117,42 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/algorithms/dsatur/CMakeFiles/dsatur.dir/rule:
-	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/algorithms/dsatur/CMakeFiles/dsatur.dir/rule
-.PHONY : src/algorithms/dsatur/CMakeFiles/dsatur.dir/rule
+src/algorithms/dsatur/CMakeFiles/dsatur_solver.dir/rule:
+	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/algorithms/dsatur/CMakeFiles/dsatur_solver.dir/rule
+.PHONY : src/algorithms/dsatur/CMakeFiles/dsatur_solver.dir/rule
 
 # Convenience name for target.
-dsatur: src/algorithms/dsatur/CMakeFiles/dsatur.dir/rule
-.PHONY : dsatur
+dsatur_solver: src/algorithms/dsatur/CMakeFiles/dsatur_solver.dir/rule
+.PHONY : dsatur_solver
 
 # fast build rule for target.
-dsatur/fast:
-	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f src/algorithms/dsatur/CMakeFiles/dsatur.dir/build.make src/algorithms/dsatur/CMakeFiles/dsatur.dir/build
-.PHONY : dsatur/fast
+dsatur_solver/fast:
+	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f src/algorithms/dsatur/CMakeFiles/dsatur_solver.dir/build.make src/algorithms/dsatur/CMakeFiles/dsatur_solver.dir/build
+.PHONY : dsatur_solver/fast
 
-DSATUR.o: DSATUR.cpp.o
-.PHONY : DSATUR.o
+DSATURSolver.o: DSATURSolver.cpp.o
+.PHONY : DSATURSolver.o
 
 # target to build an object file
-DSATUR.cpp.o:
-	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f src/algorithms/dsatur/CMakeFiles/dsatur.dir/build.make src/algorithms/dsatur/CMakeFiles/dsatur.dir/DSATUR.cpp.o
-.PHONY : DSATUR.cpp.o
+DSATURSolver.cpp.o:
+	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f src/algorithms/dsatur/CMakeFiles/dsatur_solver.dir/build.make src/algorithms/dsatur/CMakeFiles/dsatur_solver.dir/DSATURSolver.cpp.o
+.PHONY : DSATURSolver.cpp.o
 
-DSATUR.i: DSATUR.cpp.i
-.PHONY : DSATUR.i
+DSATURSolver.i: DSATURSolver.cpp.i
+.PHONY : DSATURSolver.i
 
 # target to preprocess a source file
-DSATUR.cpp.i:
-	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f src/algorithms/dsatur/CMakeFiles/dsatur.dir/build.make src/algorithms/dsatur/CMakeFiles/dsatur.dir/DSATUR.cpp.i
-.PHONY : DSATUR.cpp.i
+DSATURSolver.cpp.i:
+	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f src/algorithms/dsatur/CMakeFiles/dsatur_solver.dir/build.make src/algorithms/dsatur/CMakeFiles/dsatur_solver.dir/DSATURSolver.cpp.i
+.PHONY : DSATURSolver.cpp.i
 
-DSATUR.s: DSATUR.cpp.s
-.PHONY : DSATUR.s
+DSATURSolver.s: DSATURSolver.cpp.s
+.PHONY : DSATURSolver.s
 
 # target to generate assembly for a file
-DSATUR.cpp.s:
-	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f src/algorithms/dsatur/CMakeFiles/dsatur.dir/build.make src/algorithms/dsatur/CMakeFiles/dsatur.dir/DSATUR.cpp.s
-.PHONY : DSATUR.cpp.s
+DSATURSolver.cpp.s:
+	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f src/algorithms/dsatur/CMakeFiles/dsatur_solver.dir/build.make src/algorithms/dsatur/CMakeFiles/dsatur_solver.dir/DSATURSolver.cpp.s
+.PHONY : DSATURSolver.cpp.s
 
 # Help Target
 help:
@@ -162,10 +162,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... dsatur"
-	@echo "... DSATUR.o"
-	@echo "... DSATUR.i"
-	@echo "... DSATUR.s"
+	@echo "... dsatur_solver"
+	@echo "... DSATURSolver.o"
+	@echo "... DSATURSolver.i"
+	@echo "... DSATURSolver.s"
 .PHONY : help
 
 

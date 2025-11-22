@@ -1,0 +1,2 @@
+/usr/bin/ar qc libdsatur_solver.a CMakeFiles/dsatur_solver.dir/DSATURSolver.cpp.o
+/usr/bin/ranlib libdsatur_solver.a

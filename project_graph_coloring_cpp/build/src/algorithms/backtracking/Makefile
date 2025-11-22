@@ -117,42 +117,42 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/algorithms/backtracking/CMakeFiles/backtracking.dir/rule:
-	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/algorithms/backtracking/CMakeFiles/backtracking.dir/rule
-.PHONY : src/algorithms/backtracking/CMakeFiles/backtracking.dir/rule
+src/algorithms/backtracking/CMakeFiles/backtracking_solver.dir/rule:
+	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/algorithms/backtracking/CMakeFiles/backtracking_solver.dir/rule
+.PHONY : src/algorithms/backtracking/CMakeFiles/backtracking_solver.dir/rule
 
 # Convenience name for target.
-backtracking: src/algorithms/backtracking/CMakeFiles/backtracking.dir/rule
-.PHONY : backtracking
+backtracking_solver: src/algorithms/backtracking/CMakeFiles/backtracking_solver.dir/rule
+.PHONY : backtracking_solver
 
 # fast build rule for target.
-backtracking/fast:
-	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f src/algorithms/backtracking/CMakeFiles/backtracking.dir/build.make src/algorithms/backtracking/CMakeFiles/backtracking.dir/build
-.PHONY : backtracking/fast
+backtracking_solver/fast:
+	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f src/algorithms/backtracking/CMakeFiles/backtracking_solver.dir/build.make src/algorithms/backtracking/CMakeFiles/backtracking_solver.dir/build
+.PHONY : backtracking_solver/fast
 
-Backtracking.o: Backtracking.cpp.o
-.PHONY : Backtracking.o
+BacktrackingSolver.o: BacktrackingSolver.cpp.o
+.PHONY : BacktrackingSolver.o
 
 # target to build an object file
-Backtracking.cpp.o:
-	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f src/algorithms/backtracking/CMakeFiles/backtracking.dir/build.make src/algorithms/backtracking/CMakeFiles/backtracking.dir/Backtracking.cpp.o
-.PHONY : Backtracking.cpp.o
+BacktrackingSolver.cpp.o:
+	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f src/algorithms/backtracking/CMakeFiles/backtracking_solver.dir/build.make src/algorithms/backtracking/CMakeFiles/backtracking_solver.dir/BacktrackingSolver.cpp.o
+.PHONY : BacktrackingSolver.cpp.o
 
-Backtracking.i: Backtracking.cpp.i
-.PHONY : Backtracking.i
+BacktrackingSolver.i: BacktrackingSolver.cpp.i
+.PHONY : BacktrackingSolver.i
 
 # target to preprocess a source file
-Backtracking.cpp.i:
-	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f src/algorithms/backtracking/CMakeFiles/backtracking.dir/build.make src/algorithms/backtracking/CMakeFiles/backtracking.dir/Backtracking.cpp.i
-.PHONY : Backtracking.cpp.i
+BacktrackingSolver.cpp.i:
+	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f src/algorithms/backtracking/CMakeFiles/backtracking_solver.dir/build.make src/algorithms/backtracking/CMakeFiles/backtracking_solver.dir/BacktrackingSolver.cpp.i
+.PHONY : BacktrackingSolver.cpp.i
 
-Backtracking.s: Backtracking.cpp.s
-.PHONY : Backtracking.s
+BacktrackingSolver.s: BacktrackingSolver.cpp.s
+.PHONY : BacktrackingSolver.s
 
 # target to generate assembly for a file
-Backtracking.cpp.s:
-	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f src/algorithms/backtracking/CMakeFiles/backtracking.dir/build.make src/algorithms/backtracking/CMakeFiles/backtracking.dir/Backtracking.cpp.s
-.PHONY : Backtracking.cpp.s
+BacktrackingSolver.cpp.s:
+	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f src/algorithms/backtracking/CMakeFiles/backtracking_solver.dir/build.make src/algorithms/backtracking/CMakeFiles/backtracking_solver.dir/BacktrackingSolver.cpp.s
+.PHONY : BacktrackingSolver.cpp.s
 
 # Help Target
 help:
@@ -162,10 +162,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... backtracking"
-	@echo "... Backtracking.o"
-	@echo "... Backtracking.i"
-	@echo "... Backtracking.s"
+	@echo "... backtracking_solver"
+	@echo "... BacktrackingSolver.o"
+	@echo "... BacktrackingSolver.i"
+	@echo "... BacktrackingSolver.s"
 .PHONY : help
 
 

@@ -117,42 +117,42 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing.dir/rule:
-	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing.dir/rule
-.PHONY : src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing.dir/rule
+src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing_solver.dir/rule:
+	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing_solver.dir/rule
+.PHONY : src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing_solver.dir/rule
 
 # Convenience name for target.
-simulated_annealing: src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing.dir/rule
-.PHONY : simulated_annealing
+simulated_annealing_solver: src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing_solver.dir/rule
+.PHONY : simulated_annealing_solver
 
 # fast build rule for target.
-simulated_annealing/fast:
-	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing.dir/build.make src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing.dir/build
-.PHONY : simulated_annealing/fast
+simulated_annealing_solver/fast:
+	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing_solver.dir/build.make src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing_solver.dir/build
+.PHONY : simulated_annealing_solver/fast
 
-SimulatedAnnealing.o: SimulatedAnnealing.cpp.o
-.PHONY : SimulatedAnnealing.o
+SimulatedAnnealingSolver.o: SimulatedAnnealingSolver.cpp.o
+.PHONY : SimulatedAnnealingSolver.o
 
 # target to build an object file
-SimulatedAnnealing.cpp.o:
-	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing.dir/build.make src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing.dir/SimulatedAnnealing.cpp.o
-.PHONY : SimulatedAnnealing.cpp.o
+SimulatedAnnealingSolver.cpp.o:
+	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing_solver.dir/build.make src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing_solver.dir/SimulatedAnnealingSolver.cpp.o
+.PHONY : SimulatedAnnealingSolver.cpp.o
 
-SimulatedAnnealing.i: SimulatedAnnealing.cpp.i
-.PHONY : SimulatedAnnealing.i
+SimulatedAnnealingSolver.i: SimulatedAnnealingSolver.cpp.i
+.PHONY : SimulatedAnnealingSolver.i
 
 # target to preprocess a source file
-SimulatedAnnealing.cpp.i:
-	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing.dir/build.make src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing.dir/SimulatedAnnealing.cpp.i
-.PHONY : SimulatedAnnealing.cpp.i
+SimulatedAnnealingSolver.cpp.i:
+	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing_solver.dir/build.make src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing_solver.dir/SimulatedAnnealingSolver.cpp.i
+.PHONY : SimulatedAnnealingSolver.cpp.i
 
-SimulatedAnnealing.s: SimulatedAnnealing.cpp.s
-.PHONY : SimulatedAnnealing.s
+SimulatedAnnealingSolver.s: SimulatedAnnealingSolver.cpp.s
+.PHONY : SimulatedAnnealingSolver.s
 
 # target to generate assembly for a file
-SimulatedAnnealing.cpp.s:
-	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing.dir/build.make src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing.dir/SimulatedAnnealing.cpp.s
-.PHONY : SimulatedAnnealing.cpp.s
+SimulatedAnnealingSolver.cpp.s:
+	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing_solver.dir/build.make src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing_solver.dir/SimulatedAnnealingSolver.cpp.s
+.PHONY : SimulatedAnnealingSolver.cpp.s
 
 # Help Target
 help:
@@ -162,10 +162,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... simulated_annealing"
-	@echo "... SimulatedAnnealing.o"
-	@echo "... SimulatedAnnealing.i"
-	@echo "... SimulatedAnnealing.s"
+	@echo "... simulated_annealing_solver"
+	@echo "... SimulatedAnnealingSolver.o"
+	@echo "... SimulatedAnnealingSolver.i"
+	@echo "... SimulatedAnnealingSolver.s"
 .PHONY : help
 
 

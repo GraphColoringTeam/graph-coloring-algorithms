@@ -130,29 +130,101 @@ utils/fast:
 	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f src/utils/CMakeFiles/utils.dir/build.make src/utils/CMakeFiles/utils.dir/build
 .PHONY : utils/fast
 
-utils.o: utils.cpp.o
-.PHONY : utils.o
+Benchmark.o: Benchmark.cpp.o
+.PHONY : Benchmark.o
 
 # target to build an object file
-utils.cpp.o:
-	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f src/utils/CMakeFiles/utils.dir/build.make src/utils/CMakeFiles/utils.dir/utils.cpp.o
-.PHONY : utils.cpp.o
+Benchmark.cpp.o:
+	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f src/utils/CMakeFiles/utils.dir/build.make src/utils/CMakeFiles/utils.dir/Benchmark.cpp.o
+.PHONY : Benchmark.cpp.o
 
-utils.i: utils.cpp.i
-.PHONY : utils.i
+Benchmark.i: Benchmark.cpp.i
+.PHONY : Benchmark.i
 
 # target to preprocess a source file
-utils.cpp.i:
-	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f src/utils/CMakeFiles/utils.dir/build.make src/utils/CMakeFiles/utils.dir/utils.cpp.i
-.PHONY : utils.cpp.i
+Benchmark.cpp.i:
+	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f src/utils/CMakeFiles/utils.dir/build.make src/utils/CMakeFiles/utils.dir/Benchmark.cpp.i
+.PHONY : Benchmark.cpp.i
 
-utils.s: utils.cpp.s
-.PHONY : utils.s
+Benchmark.s: Benchmark.cpp.s
+.PHONY : Benchmark.s
 
 # target to generate assembly for a file
-utils.cpp.s:
-	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f src/utils/CMakeFiles/utils.dir/build.make src/utils/CMakeFiles/utils.dir/utils.cpp.s
-.PHONY : utils.cpp.s
+Benchmark.cpp.s:
+	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f src/utils/CMakeFiles/utils.dir/build.make src/utils/CMakeFiles/utils.dir/Benchmark.cpp.s
+.PHONY : Benchmark.cpp.s
+
+ComprehensiveAnalyzer.o: ComprehensiveAnalyzer.cpp.o
+.PHONY : ComprehensiveAnalyzer.o
+
+# target to build an object file
+ComprehensiveAnalyzer.cpp.o:
+	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f src/utils/CMakeFiles/utils.dir/build.make src/utils/CMakeFiles/utils.dir/ComprehensiveAnalyzer.cpp.o
+.PHONY : ComprehensiveAnalyzer.cpp.o
+
+ComprehensiveAnalyzer.i: ComprehensiveAnalyzer.cpp.i
+.PHONY : ComprehensiveAnalyzer.i
+
+# target to preprocess a source file
+ComprehensiveAnalyzer.cpp.i:
+	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f src/utils/CMakeFiles/utils.dir/build.make src/utils/CMakeFiles/utils.dir/ComprehensiveAnalyzer.cpp.i
+.PHONY : ComprehensiveAnalyzer.cpp.i
+
+ComprehensiveAnalyzer.s: ComprehensiveAnalyzer.cpp.s
+.PHONY : ComprehensiveAnalyzer.s
+
+# target to generate assembly for a file
+ComprehensiveAnalyzer.cpp.s:
+	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f src/utils/CMakeFiles/utils.dir/build.make src/utils/CMakeFiles/utils.dir/ComprehensiveAnalyzer.cpp.s
+.PHONY : ComprehensiveAnalyzer.cpp.s
+
+TestDataGenerator.o: TestDataGenerator.cpp.o
+.PHONY : TestDataGenerator.o
+
+# target to build an object file
+TestDataGenerator.cpp.o:
+	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f src/utils/CMakeFiles/utils.dir/build.make src/utils/CMakeFiles/utils.dir/TestDataGenerator.cpp.o
+.PHONY : TestDataGenerator.cpp.o
+
+TestDataGenerator.i: TestDataGenerator.cpp.i
+.PHONY : TestDataGenerator.i
+
+# target to preprocess a source file
+TestDataGenerator.cpp.i:
+	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f src/utils/CMakeFiles/utils.dir/build.make src/utils/CMakeFiles/utils.dir/TestDataGenerator.cpp.i
+.PHONY : TestDataGenerator.cpp.i
+
+TestDataGenerator.s: TestDataGenerator.cpp.s
+.PHONY : TestDataGenerator.s
+
+# target to generate assembly for a file
+TestDataGenerator.cpp.s:
+	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f src/utils/CMakeFiles/utils.dir/build.make src/utils/CMakeFiles/utils.dir/TestDataGenerator.cpp.s
+.PHONY : TestDataGenerator.cpp.s
+
+TestRunner.o: TestRunner.cpp.o
+.PHONY : TestRunner.o
+
+# target to build an object file
+TestRunner.cpp.o:
+	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f src/utils/CMakeFiles/utils.dir/build.make src/utils/CMakeFiles/utils.dir/TestRunner.cpp.o
+.PHONY : TestRunner.cpp.o
+
+TestRunner.i: TestRunner.cpp.i
+.PHONY : TestRunner.i
+
+# target to preprocess a source file
+TestRunner.cpp.i:
+	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f src/utils/CMakeFiles/utils.dir/build.make src/utils/CMakeFiles/utils.dir/TestRunner.cpp.i
+.PHONY : TestRunner.cpp.i
+
+TestRunner.s: TestRunner.cpp.s
+.PHONY : TestRunner.s
+
+# target to generate assembly for a file
+TestRunner.cpp.s:
+	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f src/utils/CMakeFiles/utils.dir/build.make src/utils/CMakeFiles/utils.dir/TestRunner.cpp.s
+.PHONY : TestRunner.cpp.s
 
 # Help Target
 help:
@@ -163,9 +235,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... utils"
-	@echo "... utils.o"
-	@echo "... utils.i"
-	@echo "... utils.s"
+	@echo "... Benchmark.o"
+	@echo "... Benchmark.i"
+	@echo "... Benchmark.s"
+	@echo "... ComprehensiveAnalyzer.o"
+	@echo "... ComprehensiveAnalyzer.i"
+	@echo "... ComprehensiveAnalyzer.s"
+	@echo "... TestDataGenerator.o"
+	@echo "... TestDataGenerator.i"
+	@echo "... TestDataGenerator.s"
+	@echo "... TestRunner.o"
+	@echo "... TestRunner.i"
+	@echo "... TestRunner.s"
 .PHONY : help
 
 

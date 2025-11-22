@@ -93,11 +93,12 @@ main_EXTERNAL_OBJECTS =
 main: CMakeFiles/main.dir/src/main.cpp.o
 main: CMakeFiles/main.dir/build.make
 main: src/graph_representation/libgraph.a
-main: src/algorithms/backtracking/libbacktracking.a
-main: src/algorithms/dsatur/libdsatur.a
-main: src/algorithms/simulated_annealing/libsimulated_annealing.a
-main: src/algorithms/rlf/librlf.a
-main: src/algorithms/bron_kerbosch/libbron_kerbosch.a
+main: src/utils/libutils.a
+main: src/algorithms/backtracking/libbacktracking_solver.a
+main: src/algorithms/dsatur/libdsatur_solver.a
+main: src/algorithms/simulated_annealing/libsimulated_annealing_solver.a
+main: src/algorithms/rlf/librlf_solver.a
+main: src/algorithms/constraint_programming/libcp_solver.a
 main: src/graph_representation/libgraph.a
 main: CMakeFiles/main.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable main"

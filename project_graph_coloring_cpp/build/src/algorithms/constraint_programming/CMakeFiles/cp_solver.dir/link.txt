@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcp_solver.a CMakeFiles/cp_solver.dir/CPSolver.cpp.o
+/usr/bin/ranlib libcp_solver.a

@@ -1,0 +1,2 @@
+/usr/bin/ar qc librlf_solver.a CMakeFiles/rlf_solver.dir/RLFSolver.cpp.o
+/usr/bin/ranlib librlf_solver.a

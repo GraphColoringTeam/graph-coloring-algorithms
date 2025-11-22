@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/src/graph_representation
+CXX_INCLUDES = -I/home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/src -I/home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/src/graph_representation
 
 CXX_FLAGS = -std=gnu++17
 

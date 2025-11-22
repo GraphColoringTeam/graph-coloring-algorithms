@@ -65,21 +65,21 @@ CMAKE_BINARY_DIR = /home/nao/graph-coloring-algorithms/project_graph_coloring_cp
 # The main recursive "all" target.
 all: CMakeFiles/main.dir/all
 all: src/graph_representation/all
-all: src/algorithms/all
 all: src/utils/all
+all: src/algorithms/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: src/graph_representation/preinstall
-preinstall: src/algorithms/preinstall
 preinstall: src/utils/preinstall
+preinstall: src/algorithms/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/main.dir/clean
 clean: src/graph_representation/clean
-clean: src/algorithms/clean
 clean: src/utils/clean
+clean: src/algorithms/clean
 .PHONY : clean
 
 #=============================================================================
@@ -87,36 +87,33 @@ clean: src/utils/clean
 
 # Recursive "all" directory target.
 src/algorithms/all: src/algorithms/backtracking/all
-src/algorithms/all: src/algorithms/constraint_programming/all
 src/algorithms/all: src/algorithms/dsatur/all
-src/algorithms/all: src/algorithms/rlf/all
-src/algorithms/all: src/algorithms/bron_kerbosch/all
+src/algorithms/all: src/algorithms/constraint_programming/all
 src/algorithms/all: src/algorithms/simulated_annealing/all
+src/algorithms/all: src/algorithms/rlf/all
 .PHONY : src/algorithms/all
 
 # Recursive "preinstall" directory target.
 src/algorithms/preinstall: src/algorithms/backtracking/preinstall
-src/algorithms/preinstall: src/algorithms/constraint_programming/preinstall
 src/algorithms/preinstall: src/algorithms/dsatur/preinstall
-src/algorithms/preinstall: src/algorithms/rlf/preinstall
-src/algorithms/preinstall: src/algorithms/bron_kerbosch/preinstall
+src/algorithms/preinstall: src/algorithms/constraint_programming/preinstall
 src/algorithms/preinstall: src/algorithms/simulated_annealing/preinstall
+src/algorithms/preinstall: src/algorithms/rlf/preinstall
 .PHONY : src/algorithms/preinstall
 
 # Recursive "clean" directory target.
 src/algorithms/clean: src/algorithms/backtracking/clean
-src/algorithms/clean: src/algorithms/constraint_programming/clean
 src/algorithms/clean: src/algorithms/dsatur/clean
-src/algorithms/clean: src/algorithms/rlf/clean
-src/algorithms/clean: src/algorithms/bron_kerbosch/clean
+src/algorithms/clean: src/algorithms/constraint_programming/clean
 src/algorithms/clean: src/algorithms/simulated_annealing/clean
+src/algorithms/clean: src/algorithms/rlf/clean
 .PHONY : src/algorithms/clean
 
 #=============================================================================
 # Directory level rules for directory src/algorithms/backtracking
 
 # Recursive "all" directory target.
-src/algorithms/backtracking/all: src/algorithms/backtracking/CMakeFiles/backtracking.dir/all
+src/algorithms/backtracking/all: src/algorithms/backtracking/CMakeFiles/backtracking_solver.dir/all
 .PHONY : src/algorithms/backtracking/all
 
 # Recursive "preinstall" directory target.
@@ -124,29 +121,14 @@ src/algorithms/backtracking/preinstall:
 .PHONY : src/algorithms/backtracking/preinstall
 
 # Recursive "clean" directory target.
-src/algorithms/backtracking/clean: src/algorithms/backtracking/CMakeFiles/backtracking.dir/clean
+src/algorithms/backtracking/clean: src/algorithms/backtracking/CMakeFiles/backtracking_solver.dir/clean
 .PHONY : src/algorithms/backtracking/clean
-
-#=============================================================================
-# Directory level rules for directory src/algorithms/bron_kerbosch
-
-# Recursive "all" directory target.
-src/algorithms/bron_kerbosch/all: src/algorithms/bron_kerbosch/CMakeFiles/bron_kerbosch.dir/all
-.PHONY : src/algorithms/bron_kerbosch/all
-
-# Recursive "preinstall" directory target.
-src/algorithms/bron_kerbosch/preinstall:
-.PHONY : src/algorithms/bron_kerbosch/preinstall
-
-# Recursive "clean" directory target.
-src/algorithms/bron_kerbosch/clean: src/algorithms/bron_kerbosch/CMakeFiles/bron_kerbosch.dir/clean
-.PHONY : src/algorithms/bron_kerbosch/clean
 
 #=============================================================================
 # Directory level rules for directory src/algorithms/constraint_programming
 
 # Recursive "all" directory target.
-src/algorithms/constraint_programming/all:
+src/algorithms/constraint_programming/all: src/algorithms/constraint_programming/CMakeFiles/cp_solver.dir/all
 .PHONY : src/algorithms/constraint_programming/all
 
 # Recursive "preinstall" directory target.
@@ -154,14 +136,14 @@ src/algorithms/constraint_programming/preinstall:
 .PHONY : src/algorithms/constraint_programming/preinstall
 
 # Recursive "clean" directory target.
-src/algorithms/constraint_programming/clean:
+src/algorithms/constraint_programming/clean: src/algorithms/constraint_programming/CMakeFiles/cp_solver.dir/clean
 .PHONY : src/algorithms/constraint_programming/clean
 
 #=============================================================================
 # Directory level rules for directory src/algorithms/dsatur
 
 # Recursive "all" directory target.
-src/algorithms/dsatur/all: src/algorithms/dsatur/CMakeFiles/dsatur.dir/all
+src/algorithms/dsatur/all: src/algorithms/dsatur/CMakeFiles/dsatur_solver.dir/all
 .PHONY : src/algorithms/dsatur/all
 
 # Recursive "preinstall" directory target.
@@ -169,14 +151,14 @@ src/algorithms/dsatur/preinstall:
 .PHONY : src/algorithms/dsatur/preinstall
 
 # Recursive "clean" directory target.
-src/algorithms/dsatur/clean: src/algorithms/dsatur/CMakeFiles/dsatur.dir/clean
+src/algorithms/dsatur/clean: src/algorithms/dsatur/CMakeFiles/dsatur_solver.dir/clean
 .PHONY : src/algorithms/dsatur/clean
 
 #=============================================================================
 # Directory level rules for directory src/algorithms/rlf
 
 # Recursive "all" directory target.
-src/algorithms/rlf/all: src/algorithms/rlf/CMakeFiles/rlf.dir/all
+src/algorithms/rlf/all: src/algorithms/rlf/CMakeFiles/rlf_solver.dir/all
 .PHONY : src/algorithms/rlf/all
 
 # Recursive "preinstall" directory target.
@@ -184,14 +166,14 @@ src/algorithms/rlf/preinstall:
 .PHONY : src/algorithms/rlf/preinstall
 
 # Recursive "clean" directory target.
-src/algorithms/rlf/clean: src/algorithms/rlf/CMakeFiles/rlf.dir/clean
+src/algorithms/rlf/clean: src/algorithms/rlf/CMakeFiles/rlf_solver.dir/clean
 .PHONY : src/algorithms/rlf/clean
 
 #=============================================================================
 # Directory level rules for directory src/algorithms/simulated_annealing
 
 # Recursive "all" directory target.
-src/algorithms/simulated_annealing/all: src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing.dir/all
+src/algorithms/simulated_annealing/all: src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing_solver.dir/all
 .PHONY : src/algorithms/simulated_annealing/all
 
 # Recursive "preinstall" directory target.
@@ -199,7 +181,7 @@ src/algorithms/simulated_annealing/preinstall:
 .PHONY : src/algorithms/simulated_annealing/preinstall
 
 # Recursive "clean" directory target.
-src/algorithms/simulated_annealing/clean: src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing.dir/clean
+src/algorithms/simulated_annealing/clean: src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing_solver.dir/clean
 .PHONY : src/algorithms/simulated_annealing/clean
 
 #=============================================================================
@@ -237,11 +219,12 @@ src/utils/clean: src/utils/CMakeFiles/utils.dir/clean
 
 # All Build rule for target.
 CMakeFiles/main.dir/all: src/graph_representation/CMakeFiles/graph.dir/all
-CMakeFiles/main.dir/all: src/algorithms/backtracking/CMakeFiles/backtracking.dir/all
-CMakeFiles/main.dir/all: src/algorithms/dsatur/CMakeFiles/dsatur.dir/all
-CMakeFiles/main.dir/all: src/algorithms/rlf/CMakeFiles/rlf.dir/all
-CMakeFiles/main.dir/all: src/algorithms/bron_kerbosch/CMakeFiles/bron_kerbosch.dir/all
-CMakeFiles/main.dir/all: src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing.dir/all
+CMakeFiles/main.dir/all: src/utils/CMakeFiles/utils.dir/all
+CMakeFiles/main.dir/all: src/algorithms/backtracking/CMakeFiles/backtracking_solver.dir/all
+CMakeFiles/main.dir/all: src/algorithms/dsatur/CMakeFiles/dsatur_solver.dir/all
+CMakeFiles/main.dir/all: src/algorithms/constraint_programming/CMakeFiles/cp_solver.dir/all
+CMakeFiles/main.dir/all: src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing_solver.dir/all
+CMakeFiles/main.dir/all: src/algorithms/rlf/CMakeFiles/rlf_solver.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/CMakeFiles --progress-num=11,12 "Built target main"
@@ -249,7 +232,7 @@ CMakeFiles/main.dir/all: src/algorithms/simulated_annealing/CMakeFiles/simulated
 
 # Build rule for subdir invocation for target.
 CMakeFiles/main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/CMakeFiles 21
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/main.dir/rule
@@ -290,148 +273,18 @@ src/graph_representation/CMakeFiles/graph.dir/clean:
 .PHONY : src/graph_representation/CMakeFiles/graph.dir/clean
 
 #=============================================================================
-# Target rules for target src/algorithms/backtracking/CMakeFiles/backtracking.dir
-
-# All Build rule for target.
-src/algorithms/backtracking/CMakeFiles/backtracking.dir/all: src/graph_representation/CMakeFiles/graph.dir/all
-	$(MAKE) $(MAKESILENT) -f src/algorithms/backtracking/CMakeFiles/backtracking.dir/build.make src/algorithms/backtracking/CMakeFiles/backtracking.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/algorithms/backtracking/CMakeFiles/backtracking.dir/build.make src/algorithms/backtracking/CMakeFiles/backtracking.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/CMakeFiles --progress-num=1,2 "Built target backtracking"
-.PHONY : src/algorithms/backtracking/CMakeFiles/backtracking.dir/all
-
-# Build rule for subdir invocation for target.
-src/algorithms/backtracking/CMakeFiles/backtracking.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/CMakeFiles 6
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/algorithms/backtracking/CMakeFiles/backtracking.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/CMakeFiles 0
-.PHONY : src/algorithms/backtracking/CMakeFiles/backtracking.dir/rule
-
-# Convenience name for target.
-backtracking: src/algorithms/backtracking/CMakeFiles/backtracking.dir/rule
-.PHONY : backtracking
-
-# clean rule for target.
-src/algorithms/backtracking/CMakeFiles/backtracking.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/algorithms/backtracking/CMakeFiles/backtracking.dir/build.make src/algorithms/backtracking/CMakeFiles/backtracking.dir/clean
-.PHONY : src/algorithms/backtracking/CMakeFiles/backtracking.dir/clean
-
-#=============================================================================
-# Target rules for target src/algorithms/dsatur/CMakeFiles/dsatur.dir
-
-# All Build rule for target.
-src/algorithms/dsatur/CMakeFiles/dsatur.dir/all: src/graph_representation/CMakeFiles/graph.dir/all
-	$(MAKE) $(MAKESILENT) -f src/algorithms/dsatur/CMakeFiles/dsatur.dir/build.make src/algorithms/dsatur/CMakeFiles/dsatur.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/algorithms/dsatur/CMakeFiles/dsatur.dir/build.make src/algorithms/dsatur/CMakeFiles/dsatur.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/CMakeFiles --progress-num=5,6 "Built target dsatur"
-.PHONY : src/algorithms/dsatur/CMakeFiles/dsatur.dir/all
-
-# Build rule for subdir invocation for target.
-src/algorithms/dsatur/CMakeFiles/dsatur.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/CMakeFiles 6
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/algorithms/dsatur/CMakeFiles/dsatur.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/CMakeFiles 0
-.PHONY : src/algorithms/dsatur/CMakeFiles/dsatur.dir/rule
-
-# Convenience name for target.
-dsatur: src/algorithms/dsatur/CMakeFiles/dsatur.dir/rule
-.PHONY : dsatur
-
-# clean rule for target.
-src/algorithms/dsatur/CMakeFiles/dsatur.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/algorithms/dsatur/CMakeFiles/dsatur.dir/build.make src/algorithms/dsatur/CMakeFiles/dsatur.dir/clean
-.PHONY : src/algorithms/dsatur/CMakeFiles/dsatur.dir/clean
-
-#=============================================================================
-# Target rules for target src/algorithms/rlf/CMakeFiles/rlf.dir
-
-# All Build rule for target.
-src/algorithms/rlf/CMakeFiles/rlf.dir/all: src/graph_representation/CMakeFiles/graph.dir/all
-	$(MAKE) $(MAKESILENT) -f src/algorithms/rlf/CMakeFiles/rlf.dir/build.make src/algorithms/rlf/CMakeFiles/rlf.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/algorithms/rlf/CMakeFiles/rlf.dir/build.make src/algorithms/rlf/CMakeFiles/rlf.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/CMakeFiles --progress-num=13,14 "Built target rlf"
-.PHONY : src/algorithms/rlf/CMakeFiles/rlf.dir/all
-
-# Build rule for subdir invocation for target.
-src/algorithms/rlf/CMakeFiles/rlf.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/CMakeFiles 6
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/algorithms/rlf/CMakeFiles/rlf.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/CMakeFiles 0
-.PHONY : src/algorithms/rlf/CMakeFiles/rlf.dir/rule
-
-# Convenience name for target.
-rlf: src/algorithms/rlf/CMakeFiles/rlf.dir/rule
-.PHONY : rlf
-
-# clean rule for target.
-src/algorithms/rlf/CMakeFiles/rlf.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/algorithms/rlf/CMakeFiles/rlf.dir/build.make src/algorithms/rlf/CMakeFiles/rlf.dir/clean
-.PHONY : src/algorithms/rlf/CMakeFiles/rlf.dir/clean
-
-#=============================================================================
-# Target rules for target src/algorithms/bron_kerbosch/CMakeFiles/bron_kerbosch.dir
-
-# All Build rule for target.
-src/algorithms/bron_kerbosch/CMakeFiles/bron_kerbosch.dir/all: src/graph_representation/CMakeFiles/graph.dir/all
-	$(MAKE) $(MAKESILENT) -f src/algorithms/bron_kerbosch/CMakeFiles/bron_kerbosch.dir/build.make src/algorithms/bron_kerbosch/CMakeFiles/bron_kerbosch.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/algorithms/bron_kerbosch/CMakeFiles/bron_kerbosch.dir/build.make src/algorithms/bron_kerbosch/CMakeFiles/bron_kerbosch.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/CMakeFiles --progress-num=3,4 "Built target bron_kerbosch"
-.PHONY : src/algorithms/bron_kerbosch/CMakeFiles/bron_kerbosch.dir/all
-
-# Build rule for subdir invocation for target.
-src/algorithms/bron_kerbosch/CMakeFiles/bron_kerbosch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/CMakeFiles 6
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/algorithms/bron_kerbosch/CMakeFiles/bron_kerbosch.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/CMakeFiles 0
-.PHONY : src/algorithms/bron_kerbosch/CMakeFiles/bron_kerbosch.dir/rule
-
-# Convenience name for target.
-bron_kerbosch: src/algorithms/bron_kerbosch/CMakeFiles/bron_kerbosch.dir/rule
-.PHONY : bron_kerbosch
-
-# clean rule for target.
-src/algorithms/bron_kerbosch/CMakeFiles/bron_kerbosch.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/algorithms/bron_kerbosch/CMakeFiles/bron_kerbosch.dir/build.make src/algorithms/bron_kerbosch/CMakeFiles/bron_kerbosch.dir/clean
-.PHONY : src/algorithms/bron_kerbosch/CMakeFiles/bron_kerbosch.dir/clean
-
-#=============================================================================
-# Target rules for target src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing.dir
-
-# All Build rule for target.
-src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing.dir/all: src/graph_representation/CMakeFiles/graph.dir/all
-	$(MAKE) $(MAKESILENT) -f src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing.dir/build.make src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing.dir/build.make src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/CMakeFiles --progress-num=15,16 "Built target simulated_annealing"
-.PHONY : src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing.dir/all
-
-# Build rule for subdir invocation for target.
-src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/CMakeFiles 6
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/CMakeFiles 0
-.PHONY : src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing.dir/rule
-
-# Convenience name for target.
-simulated_annealing: src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing.dir/rule
-.PHONY : simulated_annealing
-
-# clean rule for target.
-src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing.dir/build.make src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing.dir/clean
-.PHONY : src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing.dir/clean
-
-#=============================================================================
 # Target rules for target src/utils/CMakeFiles/utils.dir
 
 # All Build rule for target.
-src/utils/CMakeFiles/utils.dir/all:
+src/utils/CMakeFiles/utils.dir/all: src/graph_representation/CMakeFiles/graph.dir/all
 	$(MAKE) $(MAKESILENT) -f src/utils/CMakeFiles/utils.dir/build.make src/utils/CMakeFiles/utils.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/utils/CMakeFiles/utils.dir/build.make src/utils/CMakeFiles/utils.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/CMakeFiles --progress-num=17,18 "Built target utils"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/CMakeFiles --progress-num=17,18,19,20,21 "Built target utils"
 .PHONY : src/utils/CMakeFiles/utils.dir/all
 
 # Build rule for subdir invocation for target.
 src/utils/CMakeFiles/utils.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/utils/CMakeFiles/utils.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/CMakeFiles 0
 .PHONY : src/utils/CMakeFiles/utils.dir/rule
@@ -444,6 +297,136 @@ utils: src/utils/CMakeFiles/utils.dir/rule
 src/utils/CMakeFiles/utils.dir/clean:
 	$(MAKE) $(MAKESILENT) -f src/utils/CMakeFiles/utils.dir/build.make src/utils/CMakeFiles/utils.dir/clean
 .PHONY : src/utils/CMakeFiles/utils.dir/clean
+
+#=============================================================================
+# Target rules for target src/algorithms/backtracking/CMakeFiles/backtracking_solver.dir
+
+# All Build rule for target.
+src/algorithms/backtracking/CMakeFiles/backtracking_solver.dir/all: src/graph_representation/CMakeFiles/graph.dir/all
+	$(MAKE) $(MAKESILENT) -f src/algorithms/backtracking/CMakeFiles/backtracking_solver.dir/build.make src/algorithms/backtracking/CMakeFiles/backtracking_solver.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/algorithms/backtracking/CMakeFiles/backtracking_solver.dir/build.make src/algorithms/backtracking/CMakeFiles/backtracking_solver.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/CMakeFiles --progress-num=1,2 "Built target backtracking_solver"
+.PHONY : src/algorithms/backtracking/CMakeFiles/backtracking_solver.dir/all
+
+# Build rule for subdir invocation for target.
+src/algorithms/backtracking/CMakeFiles/backtracking_solver.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/algorithms/backtracking/CMakeFiles/backtracking_solver.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/CMakeFiles 0
+.PHONY : src/algorithms/backtracking/CMakeFiles/backtracking_solver.dir/rule
+
+# Convenience name for target.
+backtracking_solver: src/algorithms/backtracking/CMakeFiles/backtracking_solver.dir/rule
+.PHONY : backtracking_solver
+
+# clean rule for target.
+src/algorithms/backtracking/CMakeFiles/backtracking_solver.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/algorithms/backtracking/CMakeFiles/backtracking_solver.dir/build.make src/algorithms/backtracking/CMakeFiles/backtracking_solver.dir/clean
+.PHONY : src/algorithms/backtracking/CMakeFiles/backtracking_solver.dir/clean
+
+#=============================================================================
+# Target rules for target src/algorithms/dsatur/CMakeFiles/dsatur_solver.dir
+
+# All Build rule for target.
+src/algorithms/dsatur/CMakeFiles/dsatur_solver.dir/all: src/graph_representation/CMakeFiles/graph.dir/all
+	$(MAKE) $(MAKESILENT) -f src/algorithms/dsatur/CMakeFiles/dsatur_solver.dir/build.make src/algorithms/dsatur/CMakeFiles/dsatur_solver.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/algorithms/dsatur/CMakeFiles/dsatur_solver.dir/build.make src/algorithms/dsatur/CMakeFiles/dsatur_solver.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/CMakeFiles --progress-num=5,6 "Built target dsatur_solver"
+.PHONY : src/algorithms/dsatur/CMakeFiles/dsatur_solver.dir/all
+
+# Build rule for subdir invocation for target.
+src/algorithms/dsatur/CMakeFiles/dsatur_solver.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/algorithms/dsatur/CMakeFiles/dsatur_solver.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/CMakeFiles 0
+.PHONY : src/algorithms/dsatur/CMakeFiles/dsatur_solver.dir/rule
+
+# Convenience name for target.
+dsatur_solver: src/algorithms/dsatur/CMakeFiles/dsatur_solver.dir/rule
+.PHONY : dsatur_solver
+
+# clean rule for target.
+src/algorithms/dsatur/CMakeFiles/dsatur_solver.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/algorithms/dsatur/CMakeFiles/dsatur_solver.dir/build.make src/algorithms/dsatur/CMakeFiles/dsatur_solver.dir/clean
+.PHONY : src/algorithms/dsatur/CMakeFiles/dsatur_solver.dir/clean
+
+#=============================================================================
+# Target rules for target src/algorithms/constraint_programming/CMakeFiles/cp_solver.dir
+
+# All Build rule for target.
+src/algorithms/constraint_programming/CMakeFiles/cp_solver.dir/all: src/graph_representation/CMakeFiles/graph.dir/all
+	$(MAKE) $(MAKESILENT) -f src/algorithms/constraint_programming/CMakeFiles/cp_solver.dir/build.make src/algorithms/constraint_programming/CMakeFiles/cp_solver.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/algorithms/constraint_programming/CMakeFiles/cp_solver.dir/build.make src/algorithms/constraint_programming/CMakeFiles/cp_solver.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/CMakeFiles --progress-num=3,4 "Built target cp_solver"
+.PHONY : src/algorithms/constraint_programming/CMakeFiles/cp_solver.dir/all
+
+# Build rule for subdir invocation for target.
+src/algorithms/constraint_programming/CMakeFiles/cp_solver.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/algorithms/constraint_programming/CMakeFiles/cp_solver.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/CMakeFiles 0
+.PHONY : src/algorithms/constraint_programming/CMakeFiles/cp_solver.dir/rule
+
+# Convenience name for target.
+cp_solver: src/algorithms/constraint_programming/CMakeFiles/cp_solver.dir/rule
+.PHONY : cp_solver
+
+# clean rule for target.
+src/algorithms/constraint_programming/CMakeFiles/cp_solver.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/algorithms/constraint_programming/CMakeFiles/cp_solver.dir/build.make src/algorithms/constraint_programming/CMakeFiles/cp_solver.dir/clean
+.PHONY : src/algorithms/constraint_programming/CMakeFiles/cp_solver.dir/clean
+
+#=============================================================================
+# Target rules for target src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing_solver.dir
+
+# All Build rule for target.
+src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing_solver.dir/all: src/graph_representation/CMakeFiles/graph.dir/all
+	$(MAKE) $(MAKESILENT) -f src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing_solver.dir/build.make src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing_solver.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing_solver.dir/build.make src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing_solver.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/CMakeFiles --progress-num=15,16 "Built target simulated_annealing_solver"
+.PHONY : src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing_solver.dir/all
+
+# Build rule for subdir invocation for target.
+src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing_solver.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing_solver.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/CMakeFiles 0
+.PHONY : src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing_solver.dir/rule
+
+# Convenience name for target.
+simulated_annealing_solver: src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing_solver.dir/rule
+.PHONY : simulated_annealing_solver
+
+# clean rule for target.
+src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing_solver.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing_solver.dir/build.make src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing_solver.dir/clean
+.PHONY : src/algorithms/simulated_annealing/CMakeFiles/simulated_annealing_solver.dir/clean
+
+#=============================================================================
+# Target rules for target src/algorithms/rlf/CMakeFiles/rlf_solver.dir
+
+# All Build rule for target.
+src/algorithms/rlf/CMakeFiles/rlf_solver.dir/all: src/graph_representation/CMakeFiles/graph.dir/all
+	$(MAKE) $(MAKESILENT) -f src/algorithms/rlf/CMakeFiles/rlf_solver.dir/build.make src/algorithms/rlf/CMakeFiles/rlf_solver.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/algorithms/rlf/CMakeFiles/rlf_solver.dir/build.make src/algorithms/rlf/CMakeFiles/rlf_solver.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/CMakeFiles --progress-num=13,14 "Built target rlf_solver"
+.PHONY : src/algorithms/rlf/CMakeFiles/rlf_solver.dir/all
+
+# Build rule for subdir invocation for target.
+src/algorithms/rlf/CMakeFiles/rlf_solver.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/algorithms/rlf/CMakeFiles/rlf_solver.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build/CMakeFiles 0
+.PHONY : src/algorithms/rlf/CMakeFiles/rlf_solver.dir/rule
+
+# Convenience name for target.
+rlf_solver: src/algorithms/rlf/CMakeFiles/rlf_solver.dir/rule
+.PHONY : rlf_solver
+
+# clean rule for target.
+src/algorithms/rlf/CMakeFiles/rlf_solver.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/algorithms/rlf/CMakeFiles/rlf_solver.dir/build.make src/algorithms/rlf/CMakeFiles/rlf_solver.dir/clean
+.PHONY : src/algorithms/rlf/CMakeFiles/rlf_solver.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

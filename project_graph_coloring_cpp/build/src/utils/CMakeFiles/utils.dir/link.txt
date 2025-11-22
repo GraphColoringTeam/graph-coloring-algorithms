@@ -1,2 +1,2 @@
-/usr/bin/ar qc libutils.a CMakeFiles/utils.dir/utils.cpp.o
+/usr/bin/ar qc libutils.a CMakeFiles/utils.dir/TestDataGenerator.cpp.o CMakeFiles/utils.dir/TestRunner.cpp.o CMakeFiles/utils.dir/Benchmark.cpp.o CMakeFiles/utils.dir/ComprehensiveAnalyzer.cpp.o
 /usr/bin/ranlib libutils.a

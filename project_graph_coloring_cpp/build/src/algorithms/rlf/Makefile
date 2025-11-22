@@ -117,25 +117,25 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/algorithms/rlf/CMakeFiles/rlf.dir/rule:
-	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/algorithms/rlf/CMakeFiles/rlf.dir/rule
-.PHONY : src/algorithms/rlf/CMakeFiles/rlf.dir/rule
+src/algorithms/rlf/CMakeFiles/rlf_solver.dir/rule:
+	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/algorithms/rlf/CMakeFiles/rlf_solver.dir/rule
+.PHONY : src/algorithms/rlf/CMakeFiles/rlf_solver.dir/rule
 
 # Convenience name for target.
-rlf: src/algorithms/rlf/CMakeFiles/rlf.dir/rule
-.PHONY : rlf
+rlf_solver: src/algorithms/rlf/CMakeFiles/rlf_solver.dir/rule
+.PHONY : rlf_solver
 
 # fast build rule for target.
-rlf/fast:
-	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f src/algorithms/rlf/CMakeFiles/rlf.dir/build.make src/algorithms/rlf/CMakeFiles/rlf.dir/build
-.PHONY : rlf/fast
+rlf_solver/fast:
+	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f src/algorithms/rlf/CMakeFiles/rlf_solver.dir/build.make src/algorithms/rlf/CMakeFiles/rlf_solver.dir/build
+.PHONY : rlf_solver/fast
 
 RLFSolver.o: RLFSolver.cpp.o
 .PHONY : RLFSolver.o
 
 # target to build an object file
 RLFSolver.cpp.o:
-	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f src/algorithms/rlf/CMakeFiles/rlf.dir/build.make src/algorithms/rlf/CMakeFiles/rlf.dir/RLFSolver.cpp.o
+	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f src/algorithms/rlf/CMakeFiles/rlf_solver.dir/build.make src/algorithms/rlf/CMakeFiles/rlf_solver.dir/RLFSolver.cpp.o
 .PHONY : RLFSolver.cpp.o
 
 RLFSolver.i: RLFSolver.cpp.i
@@ -143,7 +143,7 @@ RLFSolver.i: RLFSolver.cpp.i
 
 # target to preprocess a source file
 RLFSolver.cpp.i:
-	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f src/algorithms/rlf/CMakeFiles/rlf.dir/build.make src/algorithms/rlf/CMakeFiles/rlf.dir/RLFSolver.cpp.i
+	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f src/algorithms/rlf/CMakeFiles/rlf_solver.dir/build.make src/algorithms/rlf/CMakeFiles/rlf_solver.dir/RLFSolver.cpp.i
 .PHONY : RLFSolver.cpp.i
 
 RLFSolver.s: RLFSolver.cpp.s
@@ -151,7 +151,7 @@ RLFSolver.s: RLFSolver.cpp.s
 
 # target to generate assembly for a file
 RLFSolver.cpp.s:
-	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f src/algorithms/rlf/CMakeFiles/rlf.dir/build.make src/algorithms/rlf/CMakeFiles/rlf.dir/RLFSolver.cpp.s
+	cd /home/nao/graph-coloring-algorithms/project_graph_coloring_cpp/build && $(MAKE) $(MAKESILENT) -f src/algorithms/rlf/CMakeFiles/rlf_solver.dir/build.make src/algorithms/rlf/CMakeFiles/rlf_solver.dir/RLFSolver.cpp.s
 .PHONY : RLFSolver.cpp.s
 
 # Help Target
@@ -162,7 +162,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... rlf"
+	@echo "... rlf_solver"
 	@echo "... RLFSolver.o"
 	@echo "... RLFSolver.i"
 	@echo "... RLFSolver.s"

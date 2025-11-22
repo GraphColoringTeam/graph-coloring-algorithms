@@ -1,0 +1,2 @@
+/usr/bin/ar qc libbacktracking_solver.a CMakeFiles/backtracking_solver.dir/BacktrackingSolver.cpp.o
+/usr/bin/ranlib libbacktracking_solver.a
